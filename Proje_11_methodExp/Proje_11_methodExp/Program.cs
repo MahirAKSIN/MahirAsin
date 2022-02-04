@@ -6,7 +6,7 @@ namespace Proje_11_methodExp
     {
         static void Main(string[] args)
         {
-
+            Console.WriteLine("");
             karsilastirma();
 
             void karsilastirma()
