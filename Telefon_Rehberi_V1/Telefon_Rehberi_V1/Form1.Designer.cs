@@ -51,19 +51,21 @@ namespace Telefon_Rehberi_V1
             // 
             // dgv_kisiler
             // 
+            this.dgv_kisiler.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgv_kisiler.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgv_kisiler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_kisiler.Location = new System.Drawing.Point(12, 44);
             this.dgv_kisiler.Name = "dgv_kisiler";
-            this.dgv_kisiler.ReadOnly = true;
-            this.dgv_kisiler.Size = new System.Drawing.Size(449, 343);
+            this.dgv_kisiler.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_kisiler.Size = new System.Drawing.Size(342, 343);
             this.dgv_kisiler.TabIndex = 0;
+            this.dgv_kisiler.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_kisiler_CellEnter);
             // 
             // txt_ad
             // 
             this.txt_ad.BackColor = System.Drawing.Color.LightGray;
             this.txt_ad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_ad.Location = new System.Drawing.Point(579, 82);
+            this.txt_ad.Location = new System.Drawing.Point(466, 81);
             this.txt_ad.Name = "txt_ad";
             this.txt_ad.Size = new System.Drawing.Size(157, 22);
             this.txt_ad.TabIndex = 1;
@@ -73,7 +75,7 @@ namespace Telefon_Rehberi_V1
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(468, 87);
+            this.label2.Location = new System.Drawing.Point(355, 86);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 16);
             this.label2.TabIndex = 2;
@@ -84,7 +86,7 @@ namespace Telefon_Rehberi_V1
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(468, 122);
+            this.label3.Location = new System.Drawing.Point(355, 121);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 16);
             this.label3.TabIndex = 2;
@@ -95,7 +97,7 @@ namespace Telefon_Rehberi_V1
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(468, 168);
+            this.label4.Location = new System.Drawing.Point(355, 167);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 16);
             this.label4.TabIndex = 2;
@@ -105,7 +107,7 @@ namespace Telefon_Rehberi_V1
             // 
             this.txt_soyad.BackColor = System.Drawing.Color.LightGray;
             this.txt_soyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_soyad.Location = new System.Drawing.Point(579, 119);
+            this.txt_soyad.Location = new System.Drawing.Point(466, 118);
             this.txt_soyad.Name = "txt_soyad";
             this.txt_soyad.Size = new System.Drawing.Size(157, 22);
             this.txt_soyad.TabIndex = 1;
@@ -114,7 +116,7 @@ namespace Telefon_Rehberi_V1
             // 
             this.txt_tel.BackColor = System.Drawing.Color.LightGray;
             this.txt_tel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_tel.Location = new System.Drawing.Point(579, 202);
+            this.txt_tel.Location = new System.Drawing.Point(466, 201);
             this.txt_tel.Name = "txt_tel";
             this.txt_tel.Size = new System.Drawing.Size(157, 22);
             this.txt_tel.TabIndex = 1;
@@ -124,7 +126,7 @@ namespace Telefon_Rehberi_V1
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(468, 44);
+            this.label1.Location = new System.Drawing.Point(355, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(23, 16);
             this.label1.TabIndex = 2;
@@ -134,7 +136,7 @@ namespace Telefon_Rehberi_V1
             // 
             this.lbl_id.AutoSize = true;
             this.lbl_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_id.Location = new System.Drawing.Point(576, 44);
+            this.lbl_id.Location = new System.Drawing.Point(463, 43);
             this.lbl_id.Name = "lbl_id";
             this.lbl_id.Size = new System.Drawing.Size(68, 16);
             this.lbl_id.TabIndex = 2;
@@ -144,7 +146,7 @@ namespace Telefon_Rehberi_V1
             // 
             this.rdb_kadin.AutoSize = true;
             this.rdb_kadin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rdb_kadin.Location = new System.Drawing.Point(579, 164);
+            this.rdb_kadin.Location = new System.Drawing.Point(466, 163);
             this.rdb_kadin.Name = "rdb_kadin";
             this.rdb_kadin.Size = new System.Drawing.Size(65, 20);
             this.rdb_kadin.TabIndex = 3;
@@ -156,7 +158,7 @@ namespace Telefon_Rehberi_V1
             // 
             this.rdb_erkek.AutoSize = true;
             this.rdb_erkek.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rdb_erkek.Location = new System.Drawing.Point(650, 164);
+            this.rdb_erkek.Location = new System.Drawing.Point(537, 163);
             this.rdb_erkek.Name = "rdb_erkek";
             this.rdb_erkek.Size = new System.Drawing.Size(66, 20);
             this.rdb_erkek.TabIndex = 3;
@@ -169,7 +171,7 @@ namespace Telefon_Rehberi_V1
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(468, 206);
+            this.label6.Location = new System.Drawing.Point(355, 205);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(85, 16);
             this.label6.TabIndex = 2;
@@ -182,7 +184,7 @@ namespace Telefon_Rehberi_V1
             this.btn_yeni.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_yeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_yeni.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_yeni.Location = new System.Drawing.Point(473, 230);
+            this.btn_yeni.Location = new System.Drawing.Point(360, 229);
             this.btn_yeni.Name = "btn_yeni";
             this.btn_yeni.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btn_yeni.Size = new System.Drawing.Size(263, 52);
@@ -195,19 +197,20 @@ namespace Telefon_Rehberi_V1
             this.btn_duzelt.BackColor = System.Drawing.Color.Silver;
             this.btn_duzelt.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_duzelt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_duzelt.Location = new System.Drawing.Point(473, 285);
+            this.btn_duzelt.Location = new System.Drawing.Point(360, 284);
             this.btn_duzelt.Name = "btn_duzelt";
             this.btn_duzelt.Size = new System.Drawing.Size(263, 49);
             this.btn_duzelt.TabIndex = 4;
             this.btn_duzelt.Text = "Duzelt";
             this.btn_duzelt.UseVisualStyleBackColor = false;
+            this.btn_duzelt.Click += new System.EventHandler(this.btn_duzelt_Click);
             // 
             // btn_sil
             // 
             this.btn_sil.BackColor = System.Drawing.Color.Silver;
             this.btn_sil.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_sil.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_sil.Location = new System.Drawing.Point(474, 337);
+            this.btn_sil.Location = new System.Drawing.Point(361, 336);
             this.btn_sil.Name = "btn_sil";
             this.btn_sil.Size = new System.Drawing.Size(263, 49);
             this.btn_sil.TabIndex = 4;
@@ -226,7 +229,7 @@ namespace Telefon_Rehberi_V1
             // btn_ara
             // 
             this.btn_ara.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_ara.Location = new System.Drawing.Point(353, 12);
+            this.btn_ara.Location = new System.Drawing.Point(246, 8);
             this.btn_ara.Name = "btn_ara";
             this.btn_ara.Size = new System.Drawing.Size(108, 29);
             this.btn_ara.TabIndex = 4;
@@ -239,7 +242,7 @@ namespace Telefon_Rehberi_V1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(740, 405);
+            this.ClientSize = new System.Drawing.Size(633, 405);
             this.Controls.Add(this.btn_sil);
             this.Controls.Add(this.btn_duzelt);
             this.Controls.Add(this.btn_ara);
