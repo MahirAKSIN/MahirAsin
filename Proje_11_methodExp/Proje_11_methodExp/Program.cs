@@ -6,7 +6,6 @@ namespace Proje_11_methodExp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("");
             karsilastirma();
 
             void karsilastirma()
@@ -17,9 +16,7 @@ namespace Proje_11_methodExp
                 Console.WriteLine($"Caniniz :{sayac}\nPuaniniz : {puan} ");
                 int rast = rastgeleSayi();
                 Console.WriteLine(rast);
-
-
-                while (sayac > 0)
+                                while (sayac > 0)
                 {
                     int tahmin = sayiGir();
                     if (tahmin == rast)
@@ -58,7 +55,6 @@ namespace Proje_11_methodExp
                 // Console.WriteLine( sayiRnd );
                 return sayiRnd;
             }
-
             Console.ReadLine();
         }
     }
