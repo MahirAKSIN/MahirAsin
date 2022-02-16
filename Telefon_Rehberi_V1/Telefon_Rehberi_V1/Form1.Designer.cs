@@ -51,6 +51,7 @@ namespace Telefon_Rehberi_V1
             // 
             // dgv_kisiler
             // 
+            this.dgv_kisiler.AllowUserToAddRows = false;
             this.dgv_kisiler.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgv_kisiler.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgv_kisiler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -191,13 +192,14 @@ namespace Telefon_Rehberi_V1
             this.btn_yeni.TabIndex = 4;
             this.btn_yeni.Text = "YENI";
             this.btn_yeni.UseVisualStyleBackColor = false;
+            this.btn_yeni.Click += new System.EventHandler(this.btn_yeni_Click);
             // 
             // btn_duzelt
             // 
             this.btn_duzelt.BackColor = System.Drawing.Color.Silver;
             this.btn_duzelt.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_duzelt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_duzelt.Location = new System.Drawing.Point(360, 284);
+            this.btn_duzelt.Location = new System.Drawing.Point(360, 285);
             this.btn_duzelt.Name = "btn_duzelt";
             this.btn_duzelt.Size = new System.Drawing.Size(263, 49);
             this.btn_duzelt.TabIndex = 4;
@@ -210,12 +212,13 @@ namespace Telefon_Rehberi_V1
             this.btn_sil.BackColor = System.Drawing.Color.Silver;
             this.btn_sil.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_sil.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_sil.Location = new System.Drawing.Point(361, 336);
+            this.btn_sil.Location = new System.Drawing.Point(361, 338);
             this.btn_sil.Name = "btn_sil";
             this.btn_sil.Size = new System.Drawing.Size(263, 49);
             this.btn_sil.TabIndex = 4;
             this.btn_sil.Text = "SIL";
             this.btn_sil.UseVisualStyleBackColor = false;
+            this.btn_sil.Click += new System.EventHandler(this.btn_sil_Click);
             // 
             // txt_aranan
             // 
@@ -225,6 +228,8 @@ namespace Telefon_Rehberi_V1
             this.txt_aranan.Name = "txt_aranan";
             this.txt_aranan.Size = new System.Drawing.Size(176, 22);
             this.txt_aranan.TabIndex = 1;
+            this.txt_aranan.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_aranan_KeyPress);
+            this.txt_aranan.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_aranan_KeyUp);
             // 
             // btn_ara
             // 
@@ -235,6 +240,7 @@ namespace Telefon_Rehberi_V1
             this.btn_ara.TabIndex = 4;
             this.btn_ara.Text = "ARA";
             this.btn_ara.UseVisualStyleBackColor = true;
+            this.btn_ara.Click += new System.EventHandler(this.btn_ara_Click);
             // 
             // Form1
             // 
@@ -242,7 +248,7 @@ namespace Telefon_Rehberi_V1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(633, 405);
+            this.ClientSize = new System.Drawing.Size(633, 395);
             this.Controls.Add(this.btn_sil);
             this.Controls.Add(this.btn_duzelt);
             this.Controls.Add(this.btn_ara);
