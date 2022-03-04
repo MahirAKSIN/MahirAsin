@@ -23,20 +23,24 @@ namespace SatisProgrami
         UrunDALcs UrunDALcs;
         private void btn_satis_Click(object sender, EventArgs e)
         {
+            UrunDALcs = new UrunDALcs();
             cruD = new crudDAL();
             satis = new Satis();
+
             satis.satisAdet = int.Parse(txt_adet.Text);
             satis.urunid = int.Parse(cmb_urunSec.SelectedValue.ToString());
             satis.satisT = dtp_satisT.Value;
-             cruD.insert(satis);
-          //  MessageBox.Show(satis .urunid.ToString() );
+
+            cruD.insert(satis);
+            UrunDALcs.StockUpdate(satis);
+
+            dgv_satis.DataSource = cruD.GetAll();
 
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             UrunDALcs = new UrunDALcs();
-              
+
             cruD = new crudDAL();
             dgv_satis.DataSource = cruD.GetAll();
 
@@ -44,6 +48,8 @@ namespace SatisProgrami
 
             cmb_urunSec.ValueMember = "id";
             cmb_urunSec.DisplayMember = "urunad";
+
+            int urunid = int.Parse(dgv_satis.CurrentRow.Cells[2].Value.ToString());
 
 
         }

@@ -11,6 +11,7 @@ namespace SatisProgrami.DataAccess
 {
     class UrunDALcs
     {
+        Satis satis;
         Urun urun;
         public List<Urun> GetAll()
         {
@@ -47,12 +48,39 @@ namespace SatisProgrami.DataAccess
                 SqlDAL.Kapat();
             }
         }
-
-        public int UrunAdetGetir(int id)
+        public bool StockUpdate(Satis satis)
+        {
+            
+            Urun urun = new Urun();
+            string query = " update tblUrunler set stokmiktari=(stokmiktari-@p1) where  id=@p2 ";
+            try
+            {
+               
+                using (SqlCommand cmd = new SqlCommand(query, SqlDAL.Baglanti))
+                {
+                    SqlDAL.Ac();
+                    cmd.Parameters.AddWithValue("@p1", satis.satisAdet );
+                    cmd.Parameters.AddWithValue("@p2", satis.urunid);
+                    cmd.ExecuteNonQuery();
+                }
+                return true;
+            }
+            catch (SqlException e)
+            {
+                string error = e.Message;
+                MessageBox.Show(error);
+                return false;
+            }
+            finally
+            {
+                SqlDAL.Kapat();
+            }
+        }
+        public int UrunAdetGetir(string kosulCumlesi = "")
         {
 
             int result = 1;
-            string query = $"select stokmiktari from tblUrunler where id={id}";
+            string query = $"select stokmiktari from tblUrunler {kosulCumlesi}";
             try
             {
                 using (SqlCommand cmd = new SqlCommand(query, SqlDAL.Baglanti))
@@ -63,9 +91,7 @@ namespace SatisProgrami.DataAccess
                     {
                         while (dr.Read())
                         {
-                            urun = new Urun();
-                            urun.id = int.Parse(dr["id"].ToString());
-                            urun.urunad = dr["urunad"].ToString();
+
                             urun.urunstok = int.Parse(dr["stokmiktari"].ToString());
                             SqlDAL.Ac();
                             result = int.Parse(cmd.ExecuteReader().ToString());
@@ -93,6 +119,5 @@ namespace SatisProgrami.DataAccess
             }
 
         }
-
     }
 }

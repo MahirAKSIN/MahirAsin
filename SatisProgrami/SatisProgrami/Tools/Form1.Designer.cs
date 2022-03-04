@@ -95,7 +95,7 @@ namespace SatisProgrami
             this.dgv_satis.Name = "dgv_satis";
             this.dgv_satis.ReadOnly = true;
             this.dgv_satis.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_satis.Size = new System.Drawing.Size(399, 236);
+            this.dgv_satis.Size = new System.Drawing.Size(695, 236);
             this.dgv_satis.TabIndex = 3;
             // 
             // txt_adet
@@ -119,7 +119,7 @@ namespace SatisProgrami
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(399, 375);
+            this.ClientSize = new System.Drawing.Size(695, 447);
             this.Controls.Add(this.btn_satis);
             this.Controls.Add(this.txt_adet);
             this.Controls.Add(this.dgv_satis);
