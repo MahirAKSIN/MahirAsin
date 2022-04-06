@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            color: red;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="text-get">T.G</button>
+    <button id="html-get">H.G</button>
+    <button id="val-get">V.G</button>
+
+    <button id="text-set">T.S</button>
+    <button id="html-set">H.S</button>
+    <button id="val-set">V.S</button>
+
+    <p>Lorem ipsum, <span>dolor</span> sit amet consectetur adipisicing elit. Ipsum impedit unde quas itaque suscipit
+        doloremque
+        veniam eius id, officiis atque temporibus obcaecati error illo, porro quis ab dicta, a maxime?</p>
+    <input type="text" value="Tamam">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#text-get").click(function () {
+                var text = $("p").text();
+                alert(text);
+            })
+        })
+
+        $("#html-get").click(function () {
+            var html = $("p").html();
+            alert(html);
+        }
+        )
+
+        $("#val-get").click(function () {
+            var val = $("input").val();
+            alert(val);
+        }
+        )
+        $("#text-set").click(function () {
+            $("p").text("selam bebek ")
+        })
+        $("#html-set").click(function () {
+            $("p").html("<h1>Hello Word </h1>")
+        })
+        $("#val-set").click(function () {
+            $("p").text("jQuery")
+        })
+    </script>
+
+</body>
+
+</html>

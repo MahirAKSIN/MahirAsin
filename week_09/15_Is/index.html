@@ -1,0 +1,61 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        #box {
+            width: 50%;
+            display: block;
+            height: 200px;
+
+            padding: 10px;
+            margin: 10px;
+            color: gray;
+        }
+
+        .yeni {
+            background-color: rebeccapurple;
+            color: wheat;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid lightgreen;
+        }
+
+        */
+    </style>
+</head>
+
+<body>
+    <button id="toArr">ToArrrya</button>
+
+    <div id="box">
+        <button class="btn">B-1</button><br><br>
+        <button class="btn">B-2</button><br><br>
+        <button class="btn">B-3</button><br><br>
+        <button class="btn">B-1</button><br><br>
+        <button class="btn">B-2</button><br><br>
+        <button class="btn">B-3</button><br><br>
+        <button class="btn">B-1</button><br><br>
+        <button class="btn">B-2</button><br><br>
+        <button class="btn">B-3</button><br><br>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("toArr").click(function () {
+                var dizi = $("#button box").toArray();
+            
+            for (var i = 0; i < dizi.lenght; i++) {
+                // alert(dizi[i].innerHtml);
+                dizi[i].style.color = "blue";
+            }
+        })
+    })
+    </script>
+</body>
+
+</html> -->

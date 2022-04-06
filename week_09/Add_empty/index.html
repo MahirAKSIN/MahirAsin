@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .ornek {
+            padding: 30px;
+            background-color: aqua;
+            font-size: 25px;
+            color: white;
+            border-radius: 25px;
+
+        }
+
+        .p {
+            background-color: red;
+
+
+
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <p id="test">Text</p>
+
+    <button id="AddClass">AddClass</button>
+    <button id="removeClass">removeClass</button>
+    <button id="toggleClass">toggleClass</button>
+    <button id="AddClass">Tıkla</button>
+    <p class="p ornek">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat facilis ea voluptas, nesciunt
+        magni
+        illum
+        voluptate laboriosam mollitia exercitationem optio ipsa totam repudiandae amet! Itaque delectus quam quia
+        recusandae magnam.</p>
+    <script>
+
+        $(document).ready(function () {
+            $("#AddClass").click(function () {
+                $("p").removeClass("p")
+                $("p").addClass("ornek")
+            })
+        })
+        $(document).ready(function () {
+            $("#removeClass").click(function () {
+                $("p").removeClass("ornek")
+            })
+        })
+
+        $(document).ready(function () {
+            $("#toggleClass").click(function () {
+                $("p").toggleClass("ornek")
+            })
+        })
+
+    </script>
+
+
+</body>
+
+</html>

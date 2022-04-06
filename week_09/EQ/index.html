@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <button id="eq-2">SELECT-TWO</button>
+    <button id="eq-4">SELECT-FOUR</button>
+    <button id="eq-ters">SELECT-TERS</button>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate velit facilis iste reiciendis. Laborum
+        deleniti laboriosam ad veniam minima, saepe aliquam voluptatibus ipsa praesentium labore vitae quae quia commodi
+        expedita!</p>
+    <p class="custom">asdsadsadsad asdsa asdsa asdsa</p>
+    <p class="custom">asdsadsadsadcdd ccf kkk kkk oo </p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate velit facilis iste reiciendis. Laborum
+        deleniti laboriosam ad veniam minima, saepe aliquam voluptatibus ipsa praesentium labore vitae quae quia commodi
+        expedita!</p>
+    <p class="custom">asdsadsadsad asdsa asdsa asdsa</p>
+    <p>asdsadsadsadcdd ccf kkk kkk oo </p>
+    <script>
+        $(document).ready(function () {
+            $("#eq-2").click(function () {
+
+
+                $("p").eq(2).css("background-color", "pink")
+
+
+            })
+            $("#eq-4").click(function () {
+
+                $("p").eq(4).css("background-color", "blue")
+
+
+            })
+            $("#eq-ter").click(function () {
+
+                $("p").eq(-2).css("background-color", "pink")
+
+
+            })
+        })
+    </script>
+
+</body>
+
+
+
+
+</html>

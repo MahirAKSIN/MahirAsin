@@ -1,0 +1,35 @@
+﻿<h1 style="color:red">Ana Sayfa</h1>
+
+
+
+@{
+
+    string kurumAd = "Wissen Akademie";
+    int yas = 21;
+    string[] adlar = { "Alex", "Recep", "Mikail", "Hagi" };
+    string[] menu = { "Anasayfa", "Hakkımda", "Projelar", "İletişim" };
+    <h2> @kurumAd</h2>
+    <p> @yas </p>
+
+
+    <nav style="display:flex;justify-content:space-around">
+        <ul style="list-style: none; display: flex; justify-content: space-around">
+            @foreach (string m in menu)
+            {
+                <li style="border:1px solid red; display:block; justify-content:space-around; padding:35px">@m</li>
+            }
+
+        </ul>
+    </nav>
+}
+
+@{
+    <ul>
+
+        @foreach (string ad in adlar)
+        {
+            <li>@ad</li>
+        }
+    </ul>
+
+}

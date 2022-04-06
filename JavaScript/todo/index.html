@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+        #newTaskBox {
+            display: flex;
+            align-items: center;
+            width: 300px;
+            height: 50px;
+            margin: auto;
+            border: 1px solid rgb(26, 40, 226);
+            border-radius: 5px;
+            padding-left: 10px;
+            margin-top: 25px;
+
+        }
+
+
+        #newTaskTextBox {
+
+            width: 80%;
+            height: 30px;
+            border: 1px solid rgb(26, 40, 226);
+            border-radius: 5px;
+
+
+        }
+
+        #newTaskButton {
+
+            width: 30px;
+            height: 30px;
+            border: 1px solid rgb(26, 40, 226);
+            border-radius: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+            transition: 1s;
+
+        }
+
+        #newTaskButton:hover {
+            background-color: darkgray;
+
+
+        }
+
+        #taskHeaderBox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* text-align: center; */
+
+        }
+
+        #tasksHeader {
+
+
+            justify-content: space-between;
+            width: 300px;
+            /* border: 1px solid rgb(26, 40, 226); */
+        }
+
+        #taskListBox li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style-type: none;
+            background-color: brown;
+            width: 300px;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 5px 0;
+            color: white;
+            height: 30px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+       
+       
+    </style>
+
+
+</head>
+<div id="todoBox">
+
+    <div id="newTaskBox">
+
+        <input id="newTaskTextBox" type="text" name="newTaskTextBox" placeholder="Yeni Gorev Giriniz">
+        <button id="newTaskButton" name="newTaskButton">+</button>
+
+
+    </div>
+    <div id="tasks">
+        <div id="taskHeaderBox">
+            <h2 id="tasksHeader">Gorevler</h2>
+            <div id="taskListBox" name="taskListBox">
+                <ul></ul>
+            </div>
+
+            <button id="clearAllButton" name="clearAllButton">Hepsini Sil</button>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+<script src="all.min.js"></script>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_mvc_WithTemplate_RenderBody", "08_mvc_WithTemplate_RenderBody\08_mvc_WithTemplate_RenderBody.csproj", "{A9668C45-84CD-4E3D-ABC2-B169F0261462}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9668C45-84CD-4E3D-ABC2-B169F0261462}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9668C45-84CD-4E3D-ABC2-B169F0261462}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9668C45-84CD-4E3D-ABC2-B169F0261462}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9668C45-84CD-4E3D-ABC2-B169F0261462}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A1C76E8-AE8D-4184-B7C9-9C5A2A7CC119}
+	EndGlobalSection
+EndGlobal

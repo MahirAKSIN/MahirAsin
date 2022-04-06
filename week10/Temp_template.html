@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Simple</title>
+    <style>
+        nav,
+        footer {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            width: 80%;
+            height: 100px;
+            align-items: center;
+            background-color: rgb(70, 70, 236);
+            border-radius: 35px;
+            padding: 0px 20px;
+        }
+
+
+        footer {
+            color: white;
+            justify-content: center;
+        }
+
+        section {
+            height: 400px;
+            width: 80%;
+            margin-top: 50px;
+            margin: 0px 9%;
+
+        }
+
+        .logo {
+            font-size: 35px;
+            /* height: 100px;
+            line-height: 100px; */
+            color: white;
+        }
+
+        .menuBox ul {
+            display: flex;
+            list-style-type: none;
+
+        }
+
+        .menuBox ul li {
+            width: 150px;
+            display: block;
+            background-color: orange;
+            padding: 15px;
+            margin: 0 15px;
+            font-size: 25px;
+            text-decoration: none;
+            border-radius: 55px;
+            cursor: pointer;
+        }
+
+        .menuBox ul li:hover {
+            margin: 5px auto;
+            background-color: orangered;
+        }
+
+        .menuBox ul li a {
+
+            font-size: 25px;
+            text-decoration: none;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Header baslangici-->
+    <nav>
+        <div class="logo">
+            <h4>Wissen</h4>
+        </div>
+        <div class="menuBox">
+            <ul>
+                <li><a href="#">AnaSayfa</a></li>
+                <li><a href="#">Hakkımda</a></li>
+                <li><a href="#">Iletişim</a></li>
+
+
+
+            </ul>
+        </div>
+    </nav>
+    <!--Header bittisi-->
+
+    <!--content baslangici-->
+    <section>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis doloremque saepe ipsum similique incidunt
+        corporis magnam cum possimus et sapiente sed, aut voluptatibus beatae repellat assumenda illo earum eos quos?
+    </section>
+
+    <!--content bittisi-->
+
+    <footer>
+        <p>Copyright 2021</p>
+    </footer>
+
+</body>
+
+</html>

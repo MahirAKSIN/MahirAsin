@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+
+        #text {
+            color: red;
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+
+        p {
+            color: white;
+            font-weight: bold;
+            background-color: black;
+        }
+    </style>
+
+
+    <script>
+        function TextChange() {
+            $("#text").css("color", "blue");
+        }
+        function BoxChange() {
+            $(".box").css("background-color", "red");
+        }
+        function pChange() {
+            $("p").css("background-color", "brown");
+        }
+        $(document).ready(function () {
+            $("#test").css("background-color", "red")
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div class="box"></div>
+    <span id="text">wissenAkademie</span>
+    <span id="text">wissenAkademie</span>
+    <span id="text">wissenAkademie</span>
+    <span id="text">wissenAkademie</span>
+    <div class="box"></div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At possimus sed, deserunt commodi omnis autem modi
+        nostrum quam earum a vero quo repudiandae! Magnam nobis veniam maxime similique fuga fugit?</p>
+    <button onclick="TextChange()">Text Degis</button>
+    <button onclick="BoxChange()">Box Degis</button>
+    <button onclick=" pChange()">P Degis</button>
+</body>
+
+</html>

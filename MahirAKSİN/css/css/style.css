@@ -1,0 +1,33 @@
+ #hero {
+  background-image: url("./fonts/main_bg.jpg");
+  background-size: cover;
+  height: 400px;
+  background-position: center center;
+  background-attachment: fixed;
+
+}
+#hero .container {
+  height: 50vh;
+}
+.generic {
+  padding: 10px 0;
+}
+.bottomM{
+  margin-bottom:15px;
+}
+.label{
+
+
+  margin-left:0px;
+  
+}
+.label1{
+  
+  margin-left:0px;
+  
+}
+.label2{
+  margin-left:100px;
+  
+}
+

@@ -1,0 +1,119 @@
+body {
+
+  background-color: rgb(165, 53, 53);
+}
+
+.sliderContent {
+  display: flex;
+  justify-content: center;
+  max-width: 1380px;
+  position: relative;
+}
+.slide {
+  display: none;
+}
+.sliderContent .slide img {
+  width: 100%;
+}
+.sliderContent .prevSlide,
+.sliderContent .nextSlide {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  width: auto;
+  border-radius: 0px 3px 3px 0px;
+  transition: 0.6s ease;
+  color: green;
+}
+.sliderContent .prevSlide:hover,
+.sliderContent .nextSlide:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+
+.sliderContent .nextSlide {
+  right: 0px;
+  border-radius: 0px 10px 0px 10px;
+}
+
+.sliderContent .prevSlide {
+  left: 0px;
+  border-radius: 10px 0px 10px 0px;
+}
+.dots {
+  position: absolute;
+  bottom: 20px;
+}
+.dots .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0px 3px;
+  background-color: yellow;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dots .dot:hover {
+  background-color: red;
+  transition: 0.4s;
+}
+/* .active {
+} */
+.sliderContent .captionText {
+  cursor: pointer;
+  position: absolute;
+  margin-left: 295px;
+  top: 65%;
+  padding: 25px;
+  font-weight: bold;
+  font-size: 40px;
+  width: auto;
+  border-radius: 0px 3px 3px 0px;
+  transition: 0.6s ease;
+  color: white;
+}
+.Map {
+  position: relative;
+  top: 80px;
+  right: 140px;
+  width: 290px;
+  height: 50px;
+  text-decoration: none;
+
+  font-size: 25px;
+}
+.Pam {
+  position: relative;
+  top: 0px;
+  left: 290px;
+  width: 250px;
+  color: green;
+}
+.ntb {
+  width: 100px;
+}
+.bilet {
+  position: relative;
+  margin-top: 130px;
+  margin-bottom: 25px;
+  width: 290px;
+  height: 50px;
+  right: 330px;
+  text-decoration: none;
+  font-size: 35px;
+}
+.fade1 {
+  animation-name: fade1;
+  animation-duration: 1.5s;
+}
+@keyframes fade1 {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
